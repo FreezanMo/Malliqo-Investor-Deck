@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malliqo: Step Into the Future of Shopping</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #4A00E0 0%, #8E2DE2 100%); /* Darker, more vibrant purple gradient */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+            padding: 2rem 0; /* Add padding top/bottom for overall page */
+        }
+        .slide-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            max-width: 90vw;
+            width: 100%;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            margin-bottom: 2rem; /* Spacing between sections */
+            display: flex; /* Always visible */
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            opacity: 1; /* Always visible */
+            transform: scale(1); /* Always at full scale */
+        }
+        .slide-content {
+            width: 100%;
+            max-width: 800px;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        h2 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #a78bfa; /* Lighter purple for headings */
+        }
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #c4b5fd; /* Even lighter purple */
+        }
+        p, ul, li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li:before {
+            content: '•';
+            color: #a78bfa;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        .visual-placeholder {
+            width: 100%;
+            max-width: 400px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            margin: 1.5rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.7);
+            overflow: hidden; /* Ensure image fits */
+        }
+        .visual-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* Use 'contain' to ensure the entire logo is visible */
+            border-radius: 15px;
+            background-color: transparent; /* Ensure no background for the logo */
+        }
+        .visual-placeholder svg {
+            width: 90%;
+            height: 90%;
+            max-width: 380px; /* Adjust max width for SVG */
+            max-height: 180px; /* Adjust max height for SVG */
+            padding: 10px; /* Padding inside the SVG container */
+        }
+        
+        /* Specific styles for content alignment */
+        .slide-content ul {
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px; /* Constrain list width for readability */
+        }
+        .slide-content li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            p, ul, li {
+                font-size: 1rem;
+            }
+            .slide-container {
+                padding: 1.5rem;
+                min-height: auto; /* Allow height to adjust to content */
+            }
+            .visual-placeholder {
+                height: 150px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h3 {
+                font-size: 1.3rem;
+            }
+            p, ul, li {
+                font-size: 0.9rem;
+            }
+            .slide-container {
+                padding: 1rem;
+            }
+            .visual-placeholder {
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="deck-container" class="flex flex-col items-center justify-center w-full h-full p-4">
+
+        <!-- Section 1: Title Section -->
+        <div id="section-1" class="slide-container">
+            <div class="slide-content">
+                <h1 class="text-white">Malliqo: Step Into the Future of Shopping</h1>
+                <p class="text-xl text-purple-200">Redefining Retail, Connection, and Discovery in a 3D Virtual World</p>
+                <div class="visual-placeholder">
+                    <img src="__file_content_fetch_url__/uploaded:logo.jpg-69450bf3-9225-4d93-a6ad-dd4ac853ada9" alt="Malliqo">
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: The Problem -->
+        <div id="section-2" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">1. The Problem: Fragmented Experiences in a Digital World</h2>
+                <div class="visual-placeholder">
+                    <img src="https://placehold.co/400x200/764ba2/ffffff?text=Problem" alt="Problem">
+                </div>
+                <ul class="text-left mx-auto">
+                    <li>The Online Shopping Disconnect: Current e-commerce lacks human touch, social interaction, and immersive discovery.</li>
+                    <li>Siloed Digital Lives: Consumers juggle multiple apps for shopping, socialising, entertainment, and food.</li>
+                    <li>Demand for Engagement: Modern consumers crave personalized, real-time, and interactive engagement.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 3: The Solution -->
+        <div id="section-3" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">2. The Solution: Malliqo – Your Virtual Shopping Universe</h2>
+                <div class="visual-placeholder">
+                    <img src="https://placehold.co/400x200/667eea/ffffff?text=Solution" alt="Solution">
+                </div>
+                <p class="text-lg text-purple-200">A revolutionary 3D virtual mall experience blending immersive tech with real-time social commerce.</p>
+                <ul class="text-left mx-auto">
+                    <li>Immersive 3D Navigation: Stroll through virtual storefronts, food courts, and gift zones.</li>
+                    <li>Unified Digital Hub: A single platform for retail, food ordering, social interaction, entertainment, and gifting.</li>
+                    <li>Real-time Engagement: Chat with sellers, connect with friends, play games, and attend live events.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 4: Market Opportunity -->
+        <div id="section-4" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">3. Market Opportunity: The Untapped Metaverse of Retail</h2>
+                <div class="visual-placeholder">
+                    <!-- SVG for Market Growth Graph -->
+                    <svg viewBox="0 0 100 50" preserveAspectRatio="none" style="background-color: rgba(255, 255, 255, 0.05); border-radius: 10px;">
+                        <polyline fill="none" stroke="#a78bfa" stroke-width="2" points="0,45 20,30 40,35 60,20 80,25 100,5" />
+                        <text x="5" y="48" fill="white" font-size="6">Year 1</text>
+                        <text x="90" y="8" fill="white" font-size="6" text-anchor="end">Year 5</text>
+                        <text x="45" y="15" fill="white" font-size="8" text-anchor="middle">Growth Trend</text>
+                    </svg>
+                </div>
+                <ul class="text-left mx-auto">
+                    <li>Global E-commerce Growth: Multi-trillion-dollar market seeking innovation.</li>
+                    <li>Rise of the Metaverse: Unprecedented opportunity for virtual retail and social commerce.</li>
+                    <li>Demand for Experiential Shopping: Consumers ready for the next evolution.</li>
+                    <li>Untapped Niche: No existing integrated 3D virtual mall with real-time social features.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 5: Product & Key Features -->
+        <div id="section-5" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">4. Product & Key Features: What Makes Malliqo Unique</h2>
+                <p class="text-lg text-purple-200">Malliqo isn't just an app; it’s a new way to experience the marketplace.</p>
+                <div class="visual-placeholder">
+                    <img src="https://placehold.co/400x200/667eea/ffffff?text=Product+UI+Mockup" alt="Product UI Mockup">
+                </div>
+                <ul class="text-left mx-auto">
+                    <li>3D Virtual Mall Navigation: Intuitive browsing, diverse categories.</li>
+                    <li>Real-Time Social Commerce: Buyer-seller chats, social hub, digital gifting.</li>
+                    <li>Integrated Food & Entertainment: Order food, play games, host/stream live events.</li>
+                    <li>Personalised & Rewarding Experience: Personalised carts, loyalty rewards, AR previews.</li>
+                    <li>Mallie: Your AI Shopping Assistant: Smart, personalized guidance, recommendations, navigation assistance.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 6: Business Model -->
+        <div id="section-6" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">5. Business Model: How Malliqo Generates Revenue</h2>
+                <div class="visual-placeholder">
+                    <img src="https://placehold.co/400x200/764ba2/ffffff?text=Business+Model" alt="Business Model">
+                </div>
+                <ul class="text-left mx-auto">
+                    <li>Commission on Sales: A percentage cut from transactions.</li>
+                    <li>Virtual Storefront Rentals: Subscription fees for brands.</li>
+                    <li>Premium Features & Advertising: Enhanced visibility, in-app ads, premium features.</li>
+                    <li>Event Hosting & Ticketing: Revenue from virtual events.</li>
+                    <li>Data Insights: Aggregated, anonymised consumer behaviour data.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 7: The Team -->
+        <div id="section-7" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">6. The Team: Driving the Future of Retail</h2>
+                <div class="visual-placeholder">
+                    <img src="https://placehold.co/400x200/667eea/ffffff?text=Team" alt="Team">
+                </div>
+                <ul class="text-left mx-auto">
+                    <li>Freezan Mo: Founder ([LinkedIn Profile](https://www.linkedin.com/in/freezanmo/)) - Visionary leader.</li>
+                    <li>Development Team: Our skilled engineers and developers are building the robust 3D platform and real-time functionalities.</li>
+                    <li>Marketing Team: Driving user acquisition, brand awareness, and community engagement.</li>
+                    <li>Partnership Team: Forging strategic alliances with retailers and tech providers.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 8: Traction & Milestones -->
+        <div id="section-8" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">7. Traction & Milestones: Our Journey So Far</h2>
+                <div class="visual-placeholder">
+                    <img src="https://placehold.co/400x200/764ba2/ffffff?text=Milestones+Timeline" alt="Milestones Timeline">
+                </div>
+                <h3 class="text-purple-300">Quarterly Plan 2025:</h3>
+                <ul class="text-left mx-auto">
+                    <li>Q1 2025: Alpha prototype complete (3D navigation, basic storefronts, chat).</li>
+                    <li>Q2 2025: Private Beta launch, Achieved 1000+ beta waitlist sign-ups.</li>
+                    <li>Q3 2025: Expand Private Beta, refine 3D, integrate food ordering.</li>
+                    <li>Q4 2025: Prepare for Public Launch, pre-launch marketing, more partnerships.</li>
+                </ul>
+                <p class="mt-4">MVP Beta Link: [Link to your MVP Beta Here]</p>
+            </div>
+        </div>
+
+        <!-- New Section for MVP Beta Live -->
+        <div id="section-8-5" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">MVP Beta Live: Experience Malliqo Now!</h2>
+                <div class="visual-placeholder">
+                    <img src="https://placehold.co/400x200/667eea/ffffff?text=Malliqo+3D+Beta" alt="Malliqo 3D Beta">
+                </div>
+                <p class="text-lg text-purple-200">Step into the future of shopping with our live MVP beta!</p>
+                <p class="text-xl text-white font-semibold mt-4">Malliqo 3D Shopping Mall — <a href="https://ohara.ai/mini-apps/ba55e7cd-8b95-4bd1-a1d6-b28a5f52f81c" target="_blank" class="underline hover:text-purple-100">https://ohara.ai/mini-apps/ba55e7cd-8b95-4bd1-a1d6-b28a5f52f81c</a></p>
+            </div>
+        </div>
+
+        <!-- Section 9: Financials & The Ask -->
+        <div id="section-9" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">8. Financials & The Ask: Fueling Our Growth</h2>
+                <div class="visual-placeholder">
+                    <!-- SVG for Funding Allocation Pie Chart -->
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" style="background-color: rgba(255, 255, 255, 0.05); border-radius: 10px;">
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="#3730a3" stroke-width="80" />
+
+                        <!-- Product Development (60%) -->
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="#a78bfa" stroke-width="80"
+                                stroke-dasharray="251.32" stroke-dashoffset="0"
+                                transform="rotate(-90 50 50)" />
+                        <!-- Marketing (20%) -->
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="#c4b5fd" stroke-width="80"
+                                stroke-dasharray="83.77" stroke-dashoffset="-251.32"
+                                transform="rotate(-90 50 50)" />
+                        <!-- Operations (15%) -->
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="#e0e7ff" stroke-width="80"
+                                stroke-dasharray="62.83" stroke-dashoffset="-335.09"
+                                transform="rotate(-90 50 50)" />
+                        <!-- Contingency (5%) -->
+                        <circle cx="50" cy="50" r="40" fill="none" stroke="#f0f9ff" stroke-width="80"
+                                stroke-dasharray="20.94" stroke-dashoffset="-397.92"
+                                transform="rotate(-90 50 50)" />
+
+                        <!-- Labels for the slices -->
+                        <text x="50" y="20" fill="white" font-size="8" text-anchor="middle">60% Dev</text>
+                        <text x="80" y="50" fill="white" font-size="8" text-anchor="middle">20% Mkt</text>
+                        <text x="50" y="80" fill="white" font-size="8" text-anchor="middle">15% Ops</text>
+                        <text x="20" y="50" fill="white" font-size="8" text-anchor="middle">5% Cont</text>
+                    </svg>
+                </div>
+                <p class="text-lg text-purple-200">Total Funding Sought: $500,000 Seed Round</p>
+                <h3 class="text-purple-300">Detailed Allocation:</h3>
+                <ul class="text-left mx-auto">
+                    <li>Product Development & Technology (60% - $300,000):
+                        <ul>
+                            <li>Salaries (Dev Team): $200,000 (e.g., 2 Senior Developers, 1 Junior Developer, 1 3D Artist)</li>
+                            <li>Infrastructure & Cloud Hosting: $50,000</li>
+                            <li>Software Licenses & Tools: $25,000</li>
+                            <li>Feature Enhancements & Bug Fixes: $25,000</li>
+                        </ul>
+                    </li>
+                    <li>Marketing & User Acquisition (20% - $100,000):
+                        <ul>
+                            <li>Salaries (Marketing Team): $40,000 (e.g., 1 Marketing Specialist)</li>
+                            <li>Digital Advertising & PR: $50,000</li>
+                            <li>Partnership Development: $10,000</li>
+                        </ul>
+                    </li>
+                    <li>Operations & Administration (15% - $75,000):
+                        <ul>
+                            <li>Salaries (Founder, Ops Support): $50,000</li>
+                            <li>Legal & Accounting: $15,000</li>
+                            <li>Office & General Expenses: $10,000</li>
+                        </ul>
+                    </li>
+                    <li>Contingency (5% - $25,000): Buffer for unforeseen expenses.</li>
+                </ul>
+                <p class="mt-4">Projected Revenue/Growth: Projected revenue of $1M in Year 1, growing to $5M by Year 3.</p>
+            </div>
+        </div>
+
+        <!-- Section 10: Vision & Future -->
+        <div id="section-10" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">9. Vision & Future: Beyond Shopping</h2>
+                <div class="visual-placeholder">
+                    <img src="https://placehold.co/400x200/764ba2/ffffff?text=Future+Vision+Concept" alt="Future Vision Concept">
+                </div>
+                <p class="text-lg text-purple-200">Malliqo envisions a future where digital and physical retail seamlessly merge.</p>
+                <h3 class="text-purple-300">Future Expansions:</h3>
+                <ul class="text-left mx-auto">
+                    <li>Virtual Real Estate: Customise and own virtual spaces.</li>
+                    <li>Educational Hubs: Hosting virtual workshops.</li>
+                    <li>Global Marketplaces: Connecting sellers and buyers across borders.</li>
+                    <li>Integration with AR/VR Hardware: Enhancing immersive experience.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Section 11: Contact Us -->
+        <div id="section-11" class="slide-container">
+            <div class="slide-content">
+                <h2 class="text-purple-300">10. Contact Us</h2>
+                <h1 class="text-white">Malliqo: Step Into the Future of Shopping.</h1>
+                <div class="visual-placeholder">
+                    <img src="https://placehold.co/400x200/667eea/ffffff?text=Contact+Information" alt="Contact+Information">
+                </div>
+                <ul class="text-center mx-auto list-none p-0">
+                    <li>Freezan Mo, Founder</li>
+                    <li>Email: mohammedfreezan@gmail.com</li>
+                    <li>Phone: +91 8072401586</li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/freezanmo/" target="_blank" class="underline hover:text-purple-100">https://www.linkedin.com/in/freezanmo/</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
